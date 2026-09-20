@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- =========================================================
+         HTML ASSIGNMENT # 1
+         Internet & Web Fundamentals
+         ========================================================= -->
+
+```
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Internet & Web Fundamentals | HTML Assignment #1</title>
+
+<style>
+    /* =========================
+       BASIC PAGE STYLING
+       ========================= */
+
+    * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.7;
+        background-color: #f4f7fb;
+        color: #243447;
+    }
+
+    /* =========================
+       HEADER
+       ========================= */
+
+    header {
+        background: linear-gradient(135deg, #12355b, #087e8b);
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 42px;
+    }
+
+    header p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .student-info {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    /* =========================
+       NAVIGATION
+       ========================= */
+
+    nav {
+        background-color: #ffffff;
+        padding: 15px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    }
+
+    nav a {
+        color: #12355b;
+        text-decoration: underline;
+        font-weight: bold;
+        margin: 0 10px;
+    }
+
+    nav a:hover {
+        color: #087e8b;
+    }
+
+    /* =========================
+       MAIN CONTAINER
+       ========================= */
+
+    main {
+        width: 90%;
+        max-width: 1150px;
+        margin: 30px auto;
+    }
+
+    /* =========================
+       HERO SECTION
+       ========================= */
+
+    .hero {
+        background-color: white;
+        padding: 30px;
+        border-radius: 12px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        text-align: center;
+    }
+
+    .hero img {
+        width: 100%;
+        max-width: 850px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .hero h2 {
+        color: #12355b;
+    }
+
+    /* =========================
+       CONTENT CARDS
+       ========================= */
+
+    section {
+        background-color: white;
+        margin-bottom: 25px;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+        border-left: 5px solid #087e8b;
+    }
+
+    section h2 {
+        color: #12355b;
+        border-bottom: 2px solid #dbe7ef;
+        padding-bottom: 8px;
+    }
+
+    section h3 {
+        color: #087e8b;
+    }
+
+    /* =========================
+       TEXT FORMATTING
+       ========================= */
+
+    .highlight {
+        background-color: #fff3bf;
+        padding: 2px 6px;
+        border-radius: 4px;
+    }
+
+    .important {
+        color: #b23a48;
+        font-weight: bold;
+    }
+
+    /* =========================
+       LISTS
+       ========================= */
+
+    li {
+        margin-bottom: 7px;
+    }
+
+    /* =========================
+       INFO BOX
+       ========================= */
+
+    .info-box {
+        background-color: #eef8fa;
+        border-left: 5px solid #087e8b;
+        padding: 15px 20px;
+        margin: 20px 0;
+        border-radius: 6px;
+    }
+
+    /* =========================
+       CODE BOX
+       ========================= */
+
+    pre {
+        background-color: #17212b;
+        color: #e8f1f2;
+        padding: 20px;
+        border-radius: 8px;
+        overflow-x: auto;
+    }
+
+    code {
+        font-family: Consolas, monospace;
+    }
+
+    /* =========================
+       TABLE
+       ========================= */
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+    }
+
+    th,
+    td {
+        border: 1px solid #ccd6dd;
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #12355b;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f7f9;
+    }
+
+    /* =========================
+       LINK BUTTON
+       ========================= */
+
+    .button-link {
+        display: inline-block;
+        background-color: #087e8b;
+        color: white;
+        padding: 10px 18px;
+        border-radius: 6px;
+        text-decoration: underline;
+        margin: 5px;
+    }
+
+    .button-link:hover {
+        background-color: #12355b;
+    }
+
+    /* =========================
+       FOOTER
+       ========================= */
+
+    footer {
+        background-color: #12355b;
+        color: white;
+        text-align: center;
+        padding: 30px 15px;
+        margin-top: 40px;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: underline;
+    }
+
+    /* =========================
+       RESPONSIVE DESIGN
+       ========================= */
+
+    @media (max-width: 700px) {
+
+        header h1 {
+            font-size: 30px;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 5px;
+        }
+
+        main {
+            width: 94%;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .hero img {
+            height: 200px;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
+
+<header id="home">
+
+    <h1>Internet & Web Fundamentals</h1>
+
+    <p>
+        <strong>HTML Assignment #1</strong>
+    </p>
+
+    <div class="student-info">
+        <b>Prepared By:</b> Mumtaz Ahmad |
+        <b>Course:</b> Internet & Web Fundamentals
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     NAVIGATION BAR
+     ========================================================= -->
+
+<nav>
+
+    <a href="#internet">Internet</a>
+
+    <a href="#web">WWW</a>
+
+    <a href="#webpage">Web Page</a>
+
+    <a href="#browser">Browser</a>
+
+    <a href="#server">Server</a>
+
+    <a href="#protocols">Protocols</a>
+
+    <a href="#html">HTML</a>
+
+    <a href="#dns">DNS</a>
+
+    <a href="#search">Search Engines</a>
+
+    <a href="#links">Links</a>
+
+</nav>
+
+
+<!-- =========================================================
+     MAIN CONTENT
+     ========================================================= -->
+
+<main>
+
+
+    <!-- =========================
+         INTRODUCTION / HERO
+         ========================= -->
+
+    <div class="hero">
+
+        <h2>Welcome to the World of the Web</h2>
+
+        <p>
+            The <strong>Internet</strong> and the
+            <strong>World Wide Web</strong> have changed the way
+            people communicate, learn, work and share information.
+        </p>
+
+        <p>
+            This assignment introduces the basic concepts of
+            <mark>Internet and Web Fundamentals</mark>.
+        </p>
+
+        <!-- Image -->
+        <img
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80"
+            alt="Technology and Internet network">
+
+        <p>
+            <small>
+                Image represents modern Internet and networking technology.
+            </small>
+        </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         1. INTERNET
+         ===================================================== -->
+
+    <section id="internet">
+
+        <h2>1. The Internet</h2>
+
+        <p>
+            The <strong>Internet</strong> is a global network of
+            interconnected computer networks that communicate using
+            standard protocols such as <b>TCP/IP</b>.
+        </p>
+
+        <h3>Important Points</h3>
+
+        <ul>
+            <li>
+                <strong>ARPANET (1969)</strong> was one of the earliest
+                operational packet-switching networks.
+            </li>
+
+            <li>
+                The Internet connects computers, servers,
+                smartphones and other devices worldwide.
+            </li>
+
+            <li>
+                It allows people to communicate and share information
+                across the world.
+            </li>
+        </ul>
+
+        <div class="info-box">
+
+            <b>Did You Know?</b>
+
+            <p>
+                The Internet is the infrastructure, while the Web is
+                one of the services that operates over the Internet.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         2. WORLD WIDE WEB
+         ===================================================== -->
+
+    <section id="web">
+
+        <h2>2. The World Wide Web (Web)</h2>
+
+        <p>
+            The <strong>World Wide Web (WWW)</strong> is a collection
+            of digital or electronic resources available via the Internet.
+        </p>
+
+        <p>
+            The Web allows users to access interconnected
+            <em>web pages</em> through <u>hyperlinks</u>.
+        </p>
+
+        <ol>
+            <li>Invented by <strong>Tim Berners-Lee</strong> in 1989.</li>
+            <li>Uses HTML to structure web pages.</li>
+            <li>Uses HTTP/HTTPS for communication.</li>
+            <li>Uses URLs to locate resources.</li>
+            <li>Web browsers display web pages.</li>
+        </ol>
+
+    </section>
+
+
+    <!-- =====================================================
+         3. W3C
+         ===================================================== -->
+
+    <section>
+
+        <h2>3. W3C — World Wide Web Consortium</h2>
+
+        <p>
+            The <strong>W3C</strong> develops and maintains
+            standards and recommendations for the Web.
+        </p>
+
+        <h3>Examples include:</h3>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Web Accessibility</li>
+            <li>Web Architecture</li>
+        </ul>
+
+        <p>
+            Visit the official
+            <a href="https://www.w3.org/" target="_blank">
+                <u>W3C Website</u>
+            </a>
+            for more information.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         4. WEB PAGE
+         ===================================================== -->
+
+    <section id="webpage">
+
+        <h2>4. Web Page</h2>
+
+        <p>
+            A <strong>web page</strong> is a single document available
+            on the Web, usually created using HTML.
+        </p>
+
+        <p>
+            Example:
+            <a href="https://example.com/about.html" target="_blank">
+                <u>https://example.com/about.html</u>
+            </a>
+        </p>
+
+        <p>
+            The About page is an example of one web page.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         5. WEBSITE
+         ===================================================== -->
+
+    <section>
+
+        <h2>5. Website</h2>
+
+        <p>
+            A <strong>website</strong> is a collection of related
+            web pages and resources available under a common domain.
+        </p>
+
+        <p>
+            Example:
+            <a href="https://www.example.com" target="_blank">
+                <u>www.example.com</u>
+            </a>
+        </p>
+
+        <h3>A website may contain:</h3>
+
+        <ul>
+            <li>Home Page</li>
+            <li>About Page</li>
+            <li>Contact Page</li>
+            <li>Services Page</li>
+            <li>Blog Pages</li>
+        </ul>
+
+    </section>
+
+
+    <!-- =====================================================
+         6. HOME PAGE
+         ===================================================== -->
+
+    <section>
+
+        <h2>6. Home Page</h2>
+
+        <p>
+            The <strong>home page</strong> is generally the main
+            or introductory page of a website.
+        </p>
+
+        <p>
+            It normally provides navigation to other important
+            sections of the website.
+        </p>
+
+        <a
+            class="button-link"
+            href="https://example.com/"
+            target="_blank">
+            Visit Example Home Page
+        </a>
+
+    </section>
+
+
+    <!-- =====================================================
+         7. INDEX PAGE
+         ===================================================== -->
+
+    <section>
+
+        <h2>7. Index Page</h2>
+
+        <p>
+            An <strong>index page</strong> is commonly the default
+            page served when a website location is accessed.
+        </p>
+
+        <h3>Typical filenames:</h3>
+
+        <ul>
+            <li><code>index.html</code></li>
+            <li><code>index.php</code></li>
+            <li><code>index.htm</code></li>
+        </ul>
+
+        <p>
+            <mark>Home page and index page are related concepts,
+            but they are not necessarily identical.</mark>
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         8. LANDING PAGE
+         ===================================================== -->
+
+    <section>
+
+        <h2>8. Landing Page</h2>
+
+        <p>
+            A <strong>landing page</strong> is a web page designed
+            for a specific purpose, often after a user clicks an
+            advertisement, email link or search result.
+        </p>
+
+        <h3>Typical goals:</h3>
+
+        <ol>
+            <li>Register for a course</li>
+            <li>Buy a product</li>
+            <li>Download an application</li>
+            <li>Submit a form</li>
+        </ol>
+
+    </section>
+
+
+    <!-- =====================================================
+         9. WEB BROWSER
+         ===================================================== -->
+
+    <section id="browser">
+
+        <h2>9. Web Browser</h2>
+
+        <p>
+            A <strong>web browser</strong> is software used to
+            access and display web pages.
+        </p>
+
+        <h3>Examples:</h3>
+
+        <ul>
+            <li>Google Chrome</li>
+            <li>Mozilla Firefox</li>
+            <li>Microsoft Edge</li>
+            <li>Safari</li>
+        </ul>
+
+        <div class="info-box">
+
+            <strong>Basic Function:</strong>
+
+            <p>
+                Browser → Request → Web Server
+                <br>
+                Web Server → Response → Browser
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         10. WEB SERVER
+         ===================================================== -->
+
+    <section id="server">
+
+        <h2>10. Web Server</h2>
+
+        <p>
+            A <strong>web server</strong> is a computer/system and
+            software that stores, processes and delivers web resources
+            to clients.
+        </p>
+
+        <h3>Common Web Server Software</h3>
+
+        <ul>
+            <li>Apache</li>
+            <li>Nginx</li>
+            <li>Microsoft IIS</li>
+        </ul>
+
+        <pre><code>
+```
+
+Web Browser
+|
+| HTTP / HTTPS Request
+↓
+Web Server
+|
+| HTTP / HTTPS Response
+↓
+Web Browser </code></pre>
+
+```
+    </section>
+
+
+    <!-- =====================================================
+         11. WEB DOMAIN
+         ===================================================== -->
+
+    <section>
+
+        <h2>11. Web Domain</h2>
+
+        <p>
+            A <strong>domain name</strong> is a human-readable
+            name used to identify a website or Internet service.
+        </p>
+
+        <p>
+            Example:
+            <b>www.example.com</b>
+        </p>
+
+        <p>
+            Instead of remembering an IP address such as
+            <code>93.184.216.34</code>, users can use a domain name.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         12. URL
+         ===================================================== -->
+
+    <section>
+
+        <h2>12. URL — Uniform Resource Locator</h2>
+
+        <p>
+            A <strong>URL</strong> specifies the location of a
+            resource and how to access it.
+        </p>
+
+        <div class="info-box">
+
+            <h3>Example URL</h3>
+
+            <p>
+                <code>https://www.example.com/about.html</code>
+            </p>
+
+            <p>
+                <b>https://</b> = Protocol
+                <br>
+                <b>www.example.com</b> = Domain
+                <br>
+                <b>/about.html</b> = Resource/Page
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         13. URI
+         ===================================================== -->
+
+    <section>
+
+        <h2>13. URI — Uniform Resource Identifier</h2>
+
+        <p>
+            A <strong>URI</strong> is a broader concept used to
+            identify a resource.
+        </p>
+
+        <p>
+            A <strong>URL is a type of URI</strong>.
+        </p>
+
+        <table>
+
+            <tr>
+                <th>Term</th>
+                <th>Meaning</th>
+            </tr>
+
+            <tr>
+                <td>URI</td>
+                <td>Identifies a resource.</td>
+            </tr>
+
+            <tr>
+                <td>URL</td>
+                <td>Identifies a resource and provides its location/access method.</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <!-- =====================================================
+         14 & 15. HTTP / HTTPS
+         ===================================================== -->
+
+    <section id="protocols">
+
+        <h2>14. HTTP — HyperText Transfer Protocol</h2>
+
+        <p>
+            <strong>HTTP</strong> is the protocol used for
+            communication between web clients and servers.
+        </p>
+
+        <p>
+            HTTP commonly uses <b>port 80</b>.
+        </p>
+
+        <pre><code>
+```
+
+Browser → HTTP Request → Server
+Browser ← HTTP Response ← Server </code></pre>
+
+```
+        <h2>15. HTTPS — HyperText Transfer Protocol Secure</h2>
+
+        <p>
+            <strong>HTTPS</strong> is HTTP communication protected
+            using modern cryptographic security, primarily through TLS.
+        </p>
+
+        <h3>HTTPS provides:</h3>
+
+        <ul>
+            <li><strong>Encryption</strong></li>
+            <li><strong>Authentication</strong></li>
+            <li><strong>Data Integrity</strong></li>
+        </ul>
+
+        <p>
+            HTTPS commonly uses <b>port 443</b>.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         16. SSL
+         ===================================================== -->
+
+    <section>
+
+        <h2>16. SSL — Secure Sockets Layer</h2>
+
+        <p>
+            <strong>SSL</strong> was an earlier security protocol
+            designed to secure network communication.
+        </p>
+
+        <p class="important">
+            Important: SSL has been deprecated and replaced by TLS.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         17. TLS
+         ===================================================== -->
+
+    <section>
+
+        <h2>17. TLS — Transport Layer Security</h2>
+
+        <p>
+            <strong>TLS</strong> is the modern cryptographic protocol
+            used to secure communications such as HTTPS.
+        </p>
+
+        <div class="info-box">
+
+            <b>Simple TLS Model:</b>
+
+            <p>
+                Browser
+                → Secure TLS Connection
+                → Web Server
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         18. HTML
+         ===================================================== -->
+
+    <section id="html">
+
+        <h2>18. HTML — HyperText Markup Language</h2>
+
+        <p>
+            <strong>HTML</strong> is the standard markup language
+            used to structure web pages.
+        </p>
+
+        <h3>Basic HTML Structure / Boilerplate</h3>
+
+        <pre><code>&lt;!DOCTYPE html&gt;
+```
+
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<title>Web Page</title>
+</head>
+
+<body>
+
+```
+Your content goes here.
+```
+
+</body>
+
+</html></code></pre>
+
+```
+        <p>
+            HTML uses <em>elements and tags</em> to structure
+            information on a web page.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         TEXT FORMATTING TAGS
+         ===================================================== -->
+
+    <section>
+
+        <h2>HTML Text Formatting Examples</h2>
+
+        <p>
+            <b>Bold Text</b>
+        </p>
+
+        <p>
+            <strong>Strong Important Text</strong>
+        </p>
+
+        <p>
+            <i>Italic Text</i>
+        </p>
+
+        <p>
+            <em>Emphasized Text</em>
+        </p>
+
+        <p>
+            <u>Underlined Text</u>
+        </p>
+
+        <p>
+            <mark>Highlighted Text</mark>
+        </p>
+
+        <p>
+            <small>Small Text</small>
+        </p>
+
+        <p>
+            <del>Deleted Text</del>
+        </p>
+
+        <p>
+            <ins>Inserted Text</ins>
+        </p>
+
+        <p>
+            H<sub>2</sub>O
+        </p>
+
+        <p>
+            X<sup>2</sup>
+        </p>
+
+        <p>
+            Line 1<br>
+            Line 2<br>
+            Line 3
+        </p>
+
+        <hr>
+
+        <p>
+            The <code>&lt;hr&gt;</code> tag creates a horizontal line.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         19. IP ADDRESS
+         ===================================================== -->
+
+    <section>
+
+        <h2>19. IP Address</h2>
+
+        <p>
+            An <strong>IP address</strong> is a unique numeric
+            address that identifies a device on the Internet
+            or a local network.
+        </p>
+
+        <h3>Examples</h3>
+
+        <ul>
+            <li>IPv4: <code>192.168.1.10</code></li>
+            <li>IPv6: <code>2001:db8::1</code></li>
+        </ul>
+
+        <p>
+            A domain name can be translated into an IP address
+            so that network communication can take place.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         20. DNS
+         ===================================================== -->
+
+    <section id="dns">
+
+        <h2>20. DNS — Domain Name System</h2>
+
+        <p>
+            <strong>DNS</strong> translates human-readable domain
+            names into IP addresses and performs other naming functions.
+        </p>
+
+        <div class="info-box">
+
+            <p>
+                <b>Example:</b>
+            </p>
+
+            <p>
+                www.example.com
+                →
+                DNS
+                →
+                93.184.216.34
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         21. NSLOOKUP
+         ===================================================== -->
+
+    <section>
+
+        <h2>21. NSlookup / nslookup</h2>
+
+        <p>
+            <strong>nslookup</strong> is a command-line tool used
+            to query DNS information.
+        </p>
+
+        <h3>Example Command</h3>
+
+        <pre><code>nslookup example.com</code></pre>
+
+        <h3>It can help determine:</h3>
+
+        <ul>
+            <li>IP addresses associated with domains</li>
+            <li>DNS server information</li>
+            <li>DNS records</li>
+        </ul>
+
+    </section>
+
+
+    <!-- =====================================================
+         22. SEARCH ENGINES
+         ===================================================== -->
+
+    <section id="search">
+
+        <h2>22. Search Engines</h2>
+
+        <p>
+            A <strong>search engine</strong> is a service that helps
+            users find information and web pages on the Internet.
+        </p>
+
+        <h3>Examples</h3>
+
+        <ul>
+            <li>
+                <a href="https://www.google.com" target="_blank">
+                    <u>Google</u>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.bing.com" target="_blank">
+                    <u>Bing</u>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://duckduckgo.com" target="_blank">
+                    <u>DuckDuckGo</u>
+                </a>
+            </li>
+        </ul>
+
+        <h3>Basic Process</h3>
+
+        <p>
+            User enters query
+            →
+            Search Engine
+            →
+            Search Index
+            →
+            Relevant Results
+            →
+            User selects a result
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         23. CHATGPT
+         ===================================================== -->
+
+    <section>
+
+        <h2>23. ChatGPT</h2>
+
+        <p>
+            <strong>ChatGPT</strong> is an AI-based conversational
+            system developed by OpenAI.
+        </p>
+
+        <p>
+            It can understand natural-language prompts and generate
+            responses, explanations, summaries, code and other content.
+        </p>
+
+        <div class="info-box">
+
+            <h3>Search Engine vs ChatGPT</h3>
+
+            <table>
+
+                <tr>
+                    <th>Search Engine</th>
+                    <th>ChatGPT</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        Primarily helps users find existing information.
+                    </td>
+
+                    <td>
+                        Primarily generates responses based on its
+                        model and available information/tools.
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         24. HYPERLINKS
+         ===================================================== -->
+
+    <section id="links">
+
+        <h2>24. Hyperlinks / Links</h2>
+
+        <p>
+            A <strong>hyperlink</strong> is a clickable reference
+            that connects one resource to another.
+        </p>
+
+        <h3>HTML Example</h3>
+
+        <pre><code>&lt;a href="https://example.com"&gt;
+Visit Example
+```
+
+</a></code></pre>
+
+```
+        <h3>Links can connect:</h3>
+
+        <ul>
+            <li>One web page to another</li>
+            <li>One section to another</li>
+            <li>One website to another website</li>
+            <li>A page to a file or resource</li>
+        </ul>
+
+        <h3>Example Links</h3>
+
+        <a
+            class="button-link"
+            href="https://www.w3.org/"
+            target="_blank">
+            W3C Website
+        </a>
+
+        <a
+            class="button-link"
+            href="https://www.google.com"
+            target="_blank">
+            Google
+        </a>
+
+        <a
+            class="button-link"
+            href="#home">
+            Back to Top
+        </a>
+
+    </section>
+
+
+    <!-- =====================================================
+         DESCRIPTION LIST
+         ===================================================== -->
+
+    <section>
+
+        <h2>Important Web Terms</h2>
+
+        <dl>
+
+            <dt>
+                <strong>Internet</strong>
+            </dt>
+
+            <dd>
+                A global network of interconnected computer networks.
+            </dd>
+
+
+            <dt>
+                <strong>Web</strong>
+            </dt>
+
+            <dd>
+                A service that operates over the Internet.
+            </dd>
+
+
+            <dt>
+                <strong>Browser</strong>
+            </dt>
+
+            <dd>
+                Software used to access and display web pages.
+            </dd>
+
+
+            <dt>
+                <strong>Server</strong>
+            </dt>
+
+            <dd>
+                A system that stores and delivers web resources.
+            </dd>
+
+
+            <dt>
+                <strong>HTML</strong>
+            </dt>
+
+            <dd>
+                The standard markup language for creating web pages.
+            </dd>
+
+        </dl>
+
+    </section>
+
+
+    <!-- =====================================================
+         FINAL SUMMARY
+         ===================================================== -->
+
+    <section>
+
+        <h2>Final Summary</h2>
+
+        <p>
+            The <strong>Internet</strong> provides the global
+            networking infrastructure, while the
+            <strong>World Wide Web</strong> provides interconnected
+            web resources accessed through browsers.
+        </p>
+
+        <p>
+            Technologies such as
+            <mark>HTML, URLs, HTTP, HTTPS, DNS and IP addresses</mark>
+            work together to make the modern Web possible.
+        </p>
+
+        <p>
+            <b>Thank you for visiting this HTML Assignment!</b>
+        </p>
+
+    </section>
+
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer>
+
+    <p>
+        <strong>HTML Assignment #1</strong>
+    </p>
+
+    <p>
+        Internet & Web Fundamentals
+    </p>
+
+    <p>
+        Prepared By: Mumtaz Ahmad
+    </p>
+
+    <p>
+        <a href="#home">
+            <u>Back to Top ↑</u>
+        </a>
+    </p>
+
+    <p>
+        <small>
+            © 2026 HTML Learning Project. All Rights Reserved.
+        </small>
+    </p>
+
+</footer>
+```
+
+</body>
+
+</html>
